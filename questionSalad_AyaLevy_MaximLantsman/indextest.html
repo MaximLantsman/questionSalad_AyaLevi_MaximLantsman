@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>סלט של שאלות</title>
+    <meta name="description" content="cooking learning game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Aya Levy & Maxim Lantsman" />
+
+    <!--Icon-->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+    <script src="questionSalad_AyaLevy_MaximLantsman.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="images/logo.png" /> <!--הלוגו של המשחק שלכם-->
+                <p><b>סלט של שאלות</b></p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout"><img class="closeX" src="images/X.png"></a>
+            <p id="title"><b>סלט של שאלות</b></p>
+            <img id="aboutlogo" src="images/logo.png" />
+            <p>אפיון ופיתוח: איה לוי | מקסים לנצמן</p>
+            <p>אופיין ופותח במסגרת פרויקט בקורסים:</p>
+            <p>סביבות לימוד אינטראקטיביות 1 | תכנות אינטראקטיבי 1</p>
+            <p>תש"פ </p>
+            <img id="HITlogo" src="images/logo50.png"> <br>
+            <a href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a>
+            <p>המכון הטכנולוגי חולון</p>
+            <p>
+                קרדיטים לתמונות נלקחו מהאתר  <a href="https://www.freepik.com/"> freepik </a>
+                <br> על ידי היוצרים:
+            </p>
+            <p id="credits">
+                <a href="https://www.freepik.com/free-vector/glass-jars-set-empty-open-containers-canning_5581869.htm"> vectorpocket | </a>
+                <a href="https://www.freepik.com/alvaro-cabrera">alvaro_cabrera | </a>
+                <a href="https://www.freepik.com/macrovector">macrovector | </a>
+                <a href="https://www.freepik.com/freepik">freepik | </a>
+                <a href="https://www.freepik.com/olga-spb">olga_spb | </a>
+                <a href="https://www.freepik.com/brgfx">brgfx | </a>
+                <a href="https://www.flaticon.com/authors/gregor-cresnar">Gregor Cresnar</a>
+            </p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay"><img class="closeX" src="images/X.png"></a>
+            <img id="chef" src="images/chef.png" />
+            <p>הכירו את השף אנטוניו! בעל מסעדת שף מוערכת בצרפת. עליך לעזור לאנטוניו להכין מנת סלט בעזרת מענה נכון על סך השאלות במשחק.</p>
+            <p> <b>בעזרת העכבר</b>, עלייך לבחור את הירק המתאים מקערות התשובות המוצגות לפניך. לאחר מכן, לחץ על כפתור בדוק שיציג בפניך האם צדקת או שגית.</p>
+            <p>במידה וצדקת, הירק הנבחר יתווסף לקערת הסלט להמשך המשחק.</p>
+            <p>לאחר שאספת את <b>כל הירקות </b>תגיע לסוף המשחק, שם הסועדים יקבלו את מנת הסלט שהכנת!</p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="questionSalad_AyaLevy_MaximLantsman.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
